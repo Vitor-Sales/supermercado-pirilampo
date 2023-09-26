@@ -14,6 +14,4 @@ const getProductsAmount = () => {
 
 getProductsAmount();
 
-
-
 module.exports = { getProductsAmount };
