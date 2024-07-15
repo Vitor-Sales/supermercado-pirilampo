@@ -1,19 +1,11 @@
 const stockProducts = require('./data.json');
 
-const vitaminsArray = (keys, values) => {
-  let kindOfVitamins = [];
-  for (let indexVitamin = 0; indexVitamin < keys.length; indexVitamin += 1) {
-    kindOfVitamins.push(`${keys[indexVitamin]} - ${values[indexVitamin]}`);
-  };
-  return kindOfVitamins;
-};
 
 const getProductsRichInVitamin = () => {
   // Desenvolva seu código dentro dessa função...
   // Variaveis: arrays
   const productsVitamins = [];
   let kindOfVitamins = [];
-  let count = 0;
   // Laço de repetição para achar esses produtos
   for (let index = 0; index < stockProducts.length; index += 1) {
     let objectKeys = Object.keys(stockProducts[index].nutritionalInfo);
